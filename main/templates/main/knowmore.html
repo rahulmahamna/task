@@ -1,0 +1,26 @@
+{% extends "base_template.html" %}
+{% block content %}
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/knowmore.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/common.js"></script>
+
+<body>
+  <div class="col-lg-12">
+    <div class="col-lg-12 headerdiv">
+      <div class="logodiv col-lg-3">
+        <a href="/"><img src="../../static/images/vettedLogo.png" class="center-block"></a>
+      </div>
+    </div>
+
+    <div class="col-lg-12 loader">
+      <p class="text-center">Showing Companies Full Information</p>
+      <img src="../../static/images/ajax-loader_1.gif" class="center-block">
+    </div>
+
+    <div class="col-lg-12 companies">
+    </div>
+
+  </div>
+</body>
+{% endblock %}

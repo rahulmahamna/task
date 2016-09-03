@@ -1,0 +1,35 @@
+{% extends "base_template.html" %}
+{% block content %}
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/common.js"></script>
+<script>
+
+</script>
+<body>
+  <div class="col-lg-12">
+    <div class="col-lg-12 headerdiv">
+      <div class="logodiv col-lg-3">
+        <a href=""><img src="../static/images/vettedLogo.png" class="center-block"></a>
+      </div>
+      <div class="col-lg-6 nopadding">
+        <form action="" class="form-horizontal" id="searchform">
+          <div class="input-box col-lg-10">
+            <input type="text" required="required" class="form-control" id="search_text" placeholder="Enter Domain Name of the company">
+          </div>
+          <button type="submit" id="getsearch" class="btn btn-default">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="col-lg-12 loader">
+      <p class="text-center">Fetching Company Information According to Domain</p>
+      <img src="../static/images/ajax-loader_1.gif" class="center-block">
+    </div>
+
+    <div class="col-lg-12 companies">
+    </div>
+
+  </div>
+</body>
+{% endblock %}
